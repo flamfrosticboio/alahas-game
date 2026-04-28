@@ -1,51 +1,22 @@
-# Elemental Fighters
+# Alahas
 
-This is a game about elemental fighters.
+This is a 2d fighter game with multiple characters to choose paired with runes.
+
+## Modding
+
+It is possible to map these notations into different commands on mod support
+(later in the 1.1 release)
+
+## Development
+
+This project uses zig v0.16.0
+Current version: 0.0.1
+
+Read at [ROADMAP.md](./ROADMAP.md) to view the roadmap of this project.
 
 ## Notation
 
-It uses similar style for tekken
-
-- n - neutral
-- 1 - left hand
-- 2 - right hand
-- 3 - left leg
-- 4 - right leg
-- r - runic activation
-- x - grab1 (can be activated with 14)
-- y - grab2 (can be activated with 23)
-- z - grab12 (can be activated with 124)
-- u - up
-- d - down
-- b - back
-- f - forward
-
-Information to notations:
-
-- H - Hits High
-- M - Hits Mid
-- L - Hits Low
-- LN - Linear
-- PC - power crush
-- HC - high crush
-- LC - low crush
-- MC - mid crush
-- T - throw
-- ST - stance
-- HOLD - hold
-- PR - Creates Projectile
-- R - Runic hit
-
-> [!TIP]
-> Example:
->
-> - `b2ML` - back right-hand that hits mid and its linear
-> - `2PML` - right hand with projectile, hits mid, and its linear
-
-### Modding
-
-It is possible to map these notations into different commands on mod support
-(later 1.1 release)
+Read how the developers name notations in the [NOTATION.md](./NOTATION.md) file
 
 ## License
 
