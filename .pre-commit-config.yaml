@@ -7,7 +7,7 @@ repos:
         language: system
         types: [file]
         files: \.zig$
-        stages: [commit]
+        stages: [pre-commit]
 
   # License header
   - repo: https://github.com/Lucas-C/pre-commit-hooks
@@ -21,7 +21,7 @@ repos:
           - //
           - --license-filepath
           - license_header.txt  
-        stages: [commit]
+        stages: [pre-commit]
 
   - repo: https://github.com/compilerla/conventional-pre-commit
     rev: v4.0.0
