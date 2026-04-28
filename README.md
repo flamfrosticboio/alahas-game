@@ -153,3 +153,7 @@ It is possible to map these notations into different commands on mod support
   - Uses "patches"
   - Custom loading of images and sounds using "patches"
   - Custom maps (not stored in "patches" but in a separate file)
+ 
+## License
+- **Source Code**: [GNU AGPLv3](./LICENSE)
+- **Assets**: [CC0 1.0 Universal](./assets/LICENSE)
