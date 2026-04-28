@@ -1,0 +1,29 @@
+repos:
+  - repo: local
+    hooks:
+      - id: zig-fmt
+        name: zig fmt
+        entry: zig fmt
+        language: system
+        types: [file]
+        files: \.zig$
+
+  # License header
+  - repo: https://github.com/Lucas-C/pre-commit-hooks
+    rev: v1.5.5
+    hooks:
+      - id: insert-license
+        name: insert AGPLv3 license
+        files: \.zig$
+        args:
+          - --comment-style
+          - //
+          - --license-filepath
+          - license_header.txt  
+
+  - repo: https://github.com/compilerla/conventional-pre-commit
+    rev: v4.0.0
+    hooks:
+      - id: conventional-pre-commit
+        stages: [commit-msg]
+        args: [] 
