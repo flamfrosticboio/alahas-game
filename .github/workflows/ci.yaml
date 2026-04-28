@@ -12,10 +12,16 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      # Due to unupdated mirrors, we will temporary switch to this method
+      # - name: Setup Zig
+      #   uses: mlugg/setup-zig@v1
+      #   with:
+      #     version: master
       - name: Setup Zig
-        uses: mlugg/setup-zig@v1
-        with:
-          version: master
+        run: |
+          wget https://ziglang.org/download/0.16.0/zig-x86_64-linux-0.16.0.tar.xz
+          tar -xf zig-x86_64-linux-0.16.0.tar.xz
+          echo "$GITHUB_WORKSPACE/zig-x86_64-linux-0.16.0" >> $GITHUB_PATH
 
       - name: Run Tests
         run: zig build test --summary all
