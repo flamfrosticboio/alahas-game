@@ -31,7 +31,12 @@
     // `zig build --fetch` can be used to fetch all dependencies of a package, recursively.
     // Once all dependencies are fetched, `zig build` no longer requires
     // internet connectivity.
-    .dependencies = .{},
+    .dependencies = .{
+        .sdl3 = .{
+            .url = "https://github.com/libsdl-org/SDL/releases/download/release-3.4.4/SDL3-3.4.4.tar.gz",
+            .hash = "N-V-__8AAFBd8gLU8L-pRGmSU4fr2bXYLPy4vz7A7hznx_Wq",
+        },
+    },
     .paths = .{
         "build.zig",
         "build.zig.zon",
