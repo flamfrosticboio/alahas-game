@@ -1,6 +1,6 @@
 # Roadmap
 
-[0.1a] (Current)
+[0.1a] (In-Development)
 
 - Basic Game Engine (walk, attack, idle, hit damage)
 - Basic Character - Fighter
