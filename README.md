@@ -28,6 +28,7 @@ Ensure that pre-commit is installed
 ```bash
 pre-commit install --hook-type pre-commit
 pre-commit install --hook-type commit-msg
+pre-commit install --hook-type pre-push
 ```
 
 ## Notation

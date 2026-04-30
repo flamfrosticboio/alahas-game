@@ -11,12 +11,12 @@ repos:
 
       - id: clippy
         name: cargo clippy
-        entry: cargo clippy -- -D warnings
+        entry: cargo clippy --all-targets --all-features -- -D warnings
         language: system
         types: [file]
         files: \.rs$
         pass_filenames: false
-        stages: [pre-commit]
+        stages: [pre-push]
 
   # License header
   - repo: https://github.com/Lucas-C/pre-commit-hooks
