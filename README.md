@@ -10,13 +10,31 @@ It is possible to map these notations into different commands on mod support
 ## Development
 
 This project uses zig v0.16.0
-Current version: 0.0.1
+Current version: 0.1-alpha
 
 Read at [ROADMAP.md](./ROADMAP.md) to view the roadmap of this project.
 
+### Contributing
+
+The project requires the following:
+
+- pre-commit (^4.6.0)
+- zig (=0.16.0)
+
+### Pre-commit setup
+
+Ensure that pre-commit is installed
+
+```bash
+pre-commit install --hook-type pre-commit
+pre-commit install --hook-type commit-msg
+pre-commit install --hook-type pre-push
+```
+
 ## Notation
 
-Read how the developers name notations in the [NOTATION.md](./NOTATION.md) file
+Read how the developers name input notations in the [NOTATION.md](./NOTATION.md)
+file
 
 ## License
 

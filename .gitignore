@@ -2,3 +2,8 @@ zig-out/**
 zig-pkg/**
 .zig-cache/**
 
+
+
+# Added by cargo
+
+/target
